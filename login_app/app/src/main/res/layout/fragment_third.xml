@@ -1,0 +1,69 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zarejestruj"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/loginField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/repatpasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="Zarejestruj"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:backgroundTint="#2596be"/>
+
+    <TextView
+        android:id="@+id/registerError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

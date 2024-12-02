@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/first_fragment">
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.example.login_app.first_fragment"
+        android:label="fragment_first_fragment"
+        tools:layout="@layout/fragment_first_fragment" >
+        <action
+            android:id="@+id/action_first_fragment_to_secondFragment"
+            app:destination="@id/secondFragment" >
+        </action>
+        <action
+            android:id="@+id/action_first_fragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.login_app.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.login_app.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment2"
+            app:destination="@id/fourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.login_app.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_first_fragment"
+            app:destination="@id/first_fragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+</navigation>
