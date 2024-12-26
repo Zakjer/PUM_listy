@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/ListaFragment">
+
+    <fragment
+        android:id="@+id/ListaFragment"
+        android:name="com.example.list_3.Lista"
+        android:label="Lista"
+        tools:layout="@layout/fragment_lista">
+        <action
+            android:id="@+id/action_ListaFragment_to_MatematykaFragment"
+            app:destination="@id/MatematykaFragment" />
+        <action
+            android:id="@+id/action_ListaFragment_to_PUMFragment"
+            app:destination="@id/PUMFragment" />
+        <action
+            android:id="@+id/action_ListaFragment_to_FizykaFragment"
+            app:destination="@id/FizykaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListyFragment"
+        android:name="com.example.list_3.Listy"
+        android:label="Listy"
+        tools:layout="@layout/fragment_listy" />
+
+    <fragment
+        android:id="@+id/MatematykaFragment"
+        android:name="com.example.list_3.Matematyka"
+        android:label="Matematyka"
+        tools:layout="@layout/fragment_matematyka" />
+
+    <fragment
+        android:id="@+id/PUMFragment"
+        android:name="com.example.list_3.PUM"
+        android:label="PUM"
+        tools:layout="@layout/fragment_p_u_m" />
+
+    <fragment
+        android:id="@+id/FizykaFragment"
+        android:name="com.example.list_3.Fizyka"
+        android:label="Fizyka"
+        tools:layout="@layout/fragment_fizyka" />
+</navigation>
