@@ -9,14 +9,18 @@
         android:name="com.example.lista_7.StudentListFragment">
         <action
             android:id="@+id/action_studentListToDetail"
-            app:destination="@id/studentDetailFragment" />
+            app:destination="@id/studentDetailFragment">
+            <argument
+                android:name="studentIndex"
+                app:argType="integer" />
+        </action>
     </fragment>
 
     <fragment
         android:id="@+id/studentDetailFragment"
         android:name="com.example.lista_7.StudentDetailFragment">
         <argument
-            android:name="student"
-            app:argType="com.example.lista_7.Student" />
+            android:name="studentIndex"
+            app:argType="integer" />
     </fragment>
 </navigation>

@@ -1,6 +1,5 @@
 package com.example.lista_7
 
-
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
